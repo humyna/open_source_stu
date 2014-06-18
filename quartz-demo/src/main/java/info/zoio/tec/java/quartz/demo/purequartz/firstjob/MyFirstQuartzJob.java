@@ -1,4 +1,4 @@
-package info.zoio.tec.java.quartz.demo.purequartz;
+package info.zoio.tec.java.quartz.demo.purequartz.firstjob;
 
 import info.zoio.tec.java.quartz.demo.utils.JobUtils;
 
