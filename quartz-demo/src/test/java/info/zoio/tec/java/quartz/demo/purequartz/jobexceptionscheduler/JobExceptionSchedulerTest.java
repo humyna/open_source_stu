@@ -1,4 +1,4 @@
-package info.zoio.tec.java.quartz.demo.purequartz.crontrigger;
+package info.zoio.tec.java.quartz.demo.purequartz.jobexceptionscheduler;
 
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -8,9 +8,8 @@ import org.quartz.SchedulerException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CronSchedulerTest {
-
-private static final Logger logger = LoggerFactory.getLogger(CronSchedulerTest.class);
+public class JobExceptionSchedulerTest {
+	private static final Logger logger = LoggerFactory.getLogger(JobExceptionSchedulerTest.class);
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -25,13 +24,12 @@ private static final Logger logger = LoggerFactory.getLogger(CronSchedulerTest.c
 	@Before
 	public void setUp() throws Exception {
 		logger.info("start运行多次...");
-
 	}
 
 	@Test
-	public void testCronScheduler() throws SchedulerException {
-		CronScheduler cronScheduler = new CronScheduler();
-		cronScheduler.cronScheduler();
+	public void testMisfireScheduler() throws SchedulerException {
+		JobExceptionScheduler jobExceptionScheduler = new JobExceptionScheduler();
+		jobExceptionScheduler.jobExceptionSchedule();
 	}
 
 }

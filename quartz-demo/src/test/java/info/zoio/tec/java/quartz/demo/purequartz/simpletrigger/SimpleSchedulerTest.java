@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 public class SimpleSchedulerTest {
 	private static final Logger logger = LoggerFactory.getLogger(SimpleSchedulerTest.class);
-	
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		logger.info("start运行一次...");
@@ -30,7 +30,7 @@ public class SimpleSchedulerTest {
 	}
 
 	@Test
-	public void testStartScheduler() throws SchedulerException {
+	public void testSimpleScheduler() throws SchedulerException {
 		SimpleScheduler simpleScheduler = new SimpleScheduler();
 		simpleScheduler.simpleScheduler();
 	}
