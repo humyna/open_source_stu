@@ -11,6 +11,7 @@ import java.util.Date;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
+import org.quartz.SchedulerMetaData;
 import org.quartz.SimpleTrigger;
 import org.quartz.impl.StdSchedulerFactory;
 import org.slf4j.Logger;
@@ -95,7 +96,9 @@ public class JobStateScheduler {
 		
 		scheduler.shutdown(true);
 		logger.info("=========================调度已关闭=========================");
-		 
+		
+		SchedulerMetaData schedulerMetaData = scheduler.getMetaData();
+	    logger.info("Summary:" + schedulerMetaData.getSummary());
 		logger.info("JobStateScheduler.jobStateScheduler end...");
 	}
 

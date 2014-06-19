@@ -52,6 +52,11 @@ public class ModParamAndStateJob implements Job {
         jobDataMap.put(EXECUTION_COUNT, count);  
         // 成员变量的增加没有意义，每次实例化对象的时候会同时初始化该变量  
         _counter++;  
+        try {
+			//等待8秒,校验@DisallowConcurrentExecution注解的影响:观察打印日志的时间
+			Thread.sleep(8L * 1000L);
+		} catch (InterruptedException e) {
+		}
 	}
 
 }
