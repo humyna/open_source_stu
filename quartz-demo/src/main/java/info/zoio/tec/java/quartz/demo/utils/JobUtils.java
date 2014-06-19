@@ -13,4 +13,8 @@ public class JobUtils {
 	public static final void simpleJob(JobExecutionContext context){
 		logger.info("run simpleJob[jobname=" + context.getJobDetail().getKey().getName()+"]");
 	}
+	
+	public static final void cronJob(JobExecutionContext context){
+		logger.info("run cronJob[jobname=" + context.getJobDetail().getKey().getName()+"]");
+	}
 }
