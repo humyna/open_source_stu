@@ -1,4 +1,4 @@
-package info.zoio.tec.java.quartz.demo.purequartz.jobstate;
+package info.zoio.tec.java.quartz.demo.purequartz.misfire;
 
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -8,8 +8,8 @@ import org.quartz.SchedulerException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class JobStateSchedulerTest {
-private static final Logger logger = LoggerFactory.getLogger(JobStateSchedulerTest.class);
+public class MisfireSchedulerTest {
+	private static final Logger logger = LoggerFactory.getLogger(MisfireSchedulerTest.class);
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -27,9 +27,9 @@ private static final Logger logger = LoggerFactory.getLogger(JobStateSchedulerTe
 	}
 
 	@Test
-	public void testJobStateScheduler() throws SchedulerException {
-		JobStateScheduler jobStateScheduler = new JobStateScheduler();
-		jobStateScheduler.jobStateScheduler();
+	public void testMisfireScheduler() throws SchedulerException {
+		MisfireScheduler misfireScheduler = new MisfireScheduler();
+		misfireScheduler.misfireScheduler();
 	}
 
 }
