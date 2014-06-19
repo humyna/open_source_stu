@@ -1,4 +1,4 @@
-package info.zoio.tec.java.quartz.demo.purequartz.simplejob;
+package info.zoio.tec.java.quartz.demo.purequartz.simpletrigger;
 
 
 import static org.quartz.DateBuilder.futureDate;

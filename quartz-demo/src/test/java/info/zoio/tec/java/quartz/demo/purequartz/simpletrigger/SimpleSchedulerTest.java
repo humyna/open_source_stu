@@ -1,4 +1,6 @@
-package info.zoio.tec.java.quartz.demo.purequartz.simplejob;
+package info.zoio.tec.java.quartz.demo.purequartz.simpletrigger;
+
+import info.zoio.tec.java.quartz.demo.purequartz.simpletrigger.SimpleScheduler;
 
 import org.junit.AfterClass;
 import org.junit.Before;

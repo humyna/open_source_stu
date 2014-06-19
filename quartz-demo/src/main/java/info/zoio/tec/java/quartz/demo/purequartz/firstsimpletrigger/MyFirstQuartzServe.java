@@ -1,4 +1,4 @@
-package info.zoio.tec.java.quartz.demo.purequartz.firstjob;
+package info.zoio.tec.java.quartz.demo.purequartz.firstsimpletrigger;
 
 import static org.quartz.DateBuilder.evenMinuteDate;
 import static org.quartz.JobBuilder.newJob;

@@ -1,6 +1,6 @@
-package info.zoio.tec.java.quartz.demo.purequartz.firstjob;
+package info.zoio.tec.java.quartz.demo.purequartz.firstsimpletrigger;
 
-import info.zoio.tec.java.quartz.demo.purequartz.firstjob.MyFirstQuartzServe;
+import info.zoio.tec.java.quartz.demo.purequartz.firstsimpletrigger.MyFirstQuartzServe;
 
 import org.junit.AfterClass;
 import org.junit.Before;
