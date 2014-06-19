@@ -29,8 +29,9 @@ public class MyFirstQuartzServe {
 
 	public void startScheduler() throws SchedulerException {
 		logger.info("初始化 获得 Scheduler对象");
+		////日期格式化 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-		// 获得 Scheduler 对象
+		//获得 Scheduler对象
 		Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();
 
 
