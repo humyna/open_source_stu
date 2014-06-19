@@ -1,6 +1,5 @@
 package info.zoio.tec.java.quartz.demo.purequartz.firstjob;
 
-import static org.junit.Assert.*;
 import info.zoio.tec.java.quartz.demo.purequartz.firstjob.MyFirstQuartzServe;
 
 import org.junit.AfterClass;

@@ -1,9 +1,16 @@
 package info.zoio.tec.java.quartz.demo.utils;
 
-public class JobUtils {
+import org.quartz.JobExecutionContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+public class JobUtils {
+	private static final Logger logger = LoggerFactory.getLogger(JobUtils.class);
 	public static final void printInfo(){
-		System.out.println("print first job task!");
+		logger.info("print first job task!");
 	}
 
+	public static final void simpleJob(JobExecutionContext context){
+		logger.info("run simpleJob[jobname=" + context.getJobDetail().getKey().getName()+"]");
+	}
 }
