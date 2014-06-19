@@ -205,5 +205,6 @@ public class SimpleScheduler {
        
        SchedulerMetaData schedulerMetaData = scheduler.getMetaData();
        logger.info("Summary:" + schedulerMetaData.getSummary());
+       logger.info("SimpleScheduler.simpleScheduler end...");
 	}
 }
