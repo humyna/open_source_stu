@@ -17,4 +17,8 @@ public class JobUtils {
 	public static final void cronJob(JobExecutionContext context){
 		logger.info("run cronJob[jobname=" + context.getJobDetail().getKey().getName()+"]");
 	}
+	
+	public static final void triggerEchoHob(JobExecutionContext context){
+		logger.info("run triggerEchoHob[jobname=" + context.getTrigger().getKey().getName()+"]");
+	}
 }
